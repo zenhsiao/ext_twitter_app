@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.1.1_322b65e68bb8d4723248caa3ff5c908e82f84c93.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_51536e1c620a301d0889a8c8f57dc6bab2dc2d46.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.1.1_dfa1e14a85f5b072ad33208a7ff5551583a9eff1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/.gradle/caches/modules-2/files-2.1/com.github.Raizlabs.DBFlow/dbflow-core/4.0.0-beta5/844b464e949827e71b39145fe6be406ce40bfc4f/dbflow-core-4.0.0-beta5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="844b464e949827e71b39145fe6be406ce40bfc4f">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/dbflow-core-4.0.0-beta5_7f657a29af004eeea9015a051573208ac90d40e7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.codepath.libraries/android-oauth-handler/1.1.0/jars/libs/codepath-utils.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a948907bd42abbd2f5f18e66c50aa81e5d07791">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/codepath-utils_0569a74bd44b3f97818dcea2cca9d37b34417cf0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.codepath.libraries/android-oauth-handler/1.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bac2c6fd56dae63bf540102c8f12cfbf5802545f">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/com.codepath.libraries-android-oauth-handler-1.1.0_ed4b88a28e4dadb6910cb4cb5c6705e57bda73b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.1.1_7297f49045f6e87d46d835c633a205103eb531ad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.1.1_9a59ac9480ab5633aa0f3c8c14e5d3bc9b359e80.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.1/support-annotations-25.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/support-annotations-25.1.1_a3e75d428af6ca33105403816a8e9c56065ac345.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.1.1_c6846e8d755d49a8de282b088b17c163022aae6f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.1.1_d971febb4d10e3edd5ce268b563a3f0679cfbaf2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.1.1_1e3e3eb9ccf46bf5847d07e670fafbd505a7deaf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.codepath.libraries/android-oauth-handler/1.1.0/jars/libs/scribe-codepath-0.0.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0492333dc94d7c11c933116e6ddee16a60594e98">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/scribe-codepath-0.0.3_98490add08df280a90debc90a868fca1e4457745.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.1.1_dfa1e14a85f5b072ad33208a7ff5551583a9eff1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.1.1_ec1d20c8dc1d041ee06b233ae0f3cc61ab72b7ad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.1.1_bacd9f676fb490c92af11261f49b0043407b47b3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.github.Raizlabs.DBFlow/dbflow/4.0.0-beta5/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3cbfd8f5f4129b280ef581427d507ad1b2983f64">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/com.github.Raizlabs.DBFlow-dbflow-4.0.0-beta5_07b11a95c81df39d6daf4d6ff9e7749a03750acc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.codepath.libraries/android-oauth-handler/1.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bac2c6fd56dae63bf540102c8f12cfbf5802545f">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/com.codepath.libraries-android-oauth-handler-1.1.0_ed4b88a28e4dadb6910cb4cb5c6705e57bda73b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.1.1_7297f49045f6e87d46d835c633a205103eb531ad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/.gradle/caches/modules-2/files-2.1/com.github.Raizlabs.DBFlow/dbflow-core/4.0.0-beta5/844b464e949827e71b39145fe6be406ce40bfc4f/dbflow-core-4.0.0-beta5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="844b464e949827e71b39145fe6be406ce40bfc4f">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/dbflow-core-4.0.0-beta5_7f657a29af004eeea9015a051573208ac90d40e7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_51536e1c620a301d0889a8c8f57dc6bab2dc2d46.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/.gradle/caches/modules-2/files-2.1/cz.msebera.android/httpclient/4.3.6/526a9f794eab830eae4f23a62c572878b3f491ab/httpclient-4.3.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="526a9f794eab830eae4f23a62c572878b3f491ab">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/httpclient-4.3.6_f2de75061e995f860b786eb1898988f0cebb0945.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.1.1_1e3e3eb9ccf46bf5847d07e670fafbd505a7deaf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/.gradle/caches/modules-2/files-2.1/com.loopj.android/android-async-http/1.4.9/386a4339ffe52d5d63e80f9bed8d2b1d1a418249/android-async-http-1.4.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="386a4339ffe52d5d63e80f9bed8d2b1d1a418249">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.9_54a90ac460fd452c534eb1d3d7c132543ab1f96d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/.gradle/caches/modules-2/files-2.1/com.loopj.android/android-async-http/1.4.9/386a4339ffe52d5d63e80f9bed8d2b1d1a418249/android-async-http-1.4.9.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="386a4339ffe52d5d63e80f9bed8d2b1d1a418249">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.9_54a90ac460fd452c534eb1d3d7c132543ab1f96d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.1.1_9a59ac9480ab5633aa0f3c8c14e5d3bc9b359e80.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.codepath.libraries/android-oauth-handler/1.1.0/jars/libs/codepath-utils.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a948907bd42abbd2f5f18e66c50aa81e5d07791">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/codepath-utils_0569a74bd44b3f97818dcea2cca9d37b34417cf0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.1.1_ec1d20c8dc1d041ee06b233ae0f3cc61ab72b7ad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/.gradle/caches/modules-2/files-2.1/cz.msebera.android/httpclient/4.3.6/526a9f794eab830eae4f23a62c572878b3f491ab/httpclient-4.3.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="526a9f794eab830eae4f23a62c572878b3f491ab">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/httpclient-4.3.6_f2de75061e995f860b786eb1898988f0cebb0945.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.codepath.libraries/android-oauth-handler/1.1.0/jars/libs/scribe-codepath-0.0.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0492333dc94d7c11c933116e6ddee16a60594e98">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/scribe-codepath-0.0.3_98490add08df280a90debc90a868fca1e4457745.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.1.1_bacd9f676fb490c92af11261f49b0043407b47b3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.github.Raizlabs.DBFlow/dbflow/4.0.0-beta5/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3cbfd8f5f4129b280ef581427d507ad1b2983f64">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/com.github.Raizlabs.DBFlow-dbflow-4.0.0-beta5_07b11a95c81df39d6daf4d6ff9e7749a03750acc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.1.1_322b65e68bb8d4723248caa3ff5c908e82f84c93.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.1.1_d971febb4d10e3edd5ce268b563a3f0679cfbaf2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.1.1_c6846e8d755d49a8de282b088b17c163022aae6f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Zen/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.1/support-annotations-25.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="/Users/Zen/Downloads/MySimpleTwitter/app/build/intermediates/pre-dexed/debug/support-annotations-25.1.1_a3e75d428af6ca33105403816a8e9c56065ac345.jar" />
+    </item>
+
+</items>
