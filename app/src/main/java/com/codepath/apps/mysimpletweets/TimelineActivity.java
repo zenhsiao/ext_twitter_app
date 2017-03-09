@@ -66,7 +66,6 @@ public class TimelineActivity extends AppCompatActivity {
     }
 
 
-
     public void onComposeAction(MenuItem mi) {
         // handle click here
 //      Toast.makeText(getApplicationContext(),"compose",Toast.LENGTH_LONG).show();
@@ -75,6 +74,13 @@ public class TimelineActivity extends AppCompatActivity {
         i.putExtra("myScreenName", myScreenName);
         i.putExtra("myPhotoUrl", myPhotoUrl);
         startActivityForResult(i, REQUEST_CODE);
+    }
+
+
+    public void onProfileView(MenuItem mi){
+        //launch the profile view
+        Intent i = new Intent(this,ProfileActivity.class);
+        startActivity(i);
     }
 
     @Override
