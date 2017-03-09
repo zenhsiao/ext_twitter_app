@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -15,6 +14,7 @@ import com.astuetz.PagerSlidingTabStrip;
 import com.codepath.apps.mysimpletweets.fragments.HomeTimelineFragment;
 import com.codepath.apps.mysimpletweets.fragments.MentionsTimelineFragment;
 import com.codepath.apps.mysimpletweets.fragments.TweetsListFragment;
+import com.codepath.apps.mysimpletweets.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.json.JSONException;
@@ -27,6 +27,7 @@ public class TimelineActivity extends AppCompatActivity {
     private TweetsListFragment fragmentTweetsList;
     private HomeTimelineFragment homeTimelineFragment;
     private TwitterClient client;
+    private SmartFragmentStatePagerAdapter adapterViewPager;
 
     private String myName;
     private String myScreenName;
@@ -76,17 +77,17 @@ public class TimelineActivity extends AppCompatActivity {
         startActivityForResult(i, REQUEST_CODE);
     }
 
-//    @Override
-//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        // REQUEST_CODE is defined above
-//        if (resultCode == RESULT_OK && requestCode == REQUEST_CODE) {
-//            // Load the fragment
-//            homeTimelineFragment = (HomeTimelineFragment)getSupportFragmentManager().findFragmentById(R.id.fragment_timeline);
-//
-//            Tweet newTweet =(Tweet) data.getSerializableExtra("newTweet");
-//            homeTimelineFragment.insertTweet(newTweet,0);
-//        }
-//    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        // REQUEST_CODE is defined above
+        if (resultCode == RESULT_OK && requestCode == REQUEST_CODE) {
+            // Load the fragment
+            homeTimelineFragment = (HomeTimelineFragment) adapterViewPager.getRegisteredFragment(0);
+
+            Tweet newTweet =(Tweet) data.getSerializableExtra("newTweet");
+            homeTimelineFragment.insertTweet(newTweet,0);
+        }
+    }
 
     public void getMyInfo(){
 
@@ -112,8 +113,8 @@ public class TimelineActivity extends AppCompatActivity {
         });
     }
 
-    //return the order of the fragments in the view pager
-    public class TweetsPagerAdapter extends FragmentPagerAdapter{
+    // Extend from SmartFragmentStatePagerAdapter now instead for more dynamic ViewPager items
+    public static class TweetsPagerAdapter extends SmartFragmentStatePagerAdapter{
         private String tabTitles[] = {"Home","Mentions"};
 
         //adapter gets the manager insert or remove fragment from activity
@@ -145,5 +146,7 @@ public class TimelineActivity extends AppCompatActivity {
             return tabTitles.length;
         }
     }
+
+
 
 }
