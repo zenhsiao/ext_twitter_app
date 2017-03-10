@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.astuetz.PagerSlidingTabStrip;
 import com.codepath.apps.mysimpletweets.fragments.HomeTimelineFragment;
@@ -44,16 +45,16 @@ public class TimelineActivity extends AppCompatActivity {
         //get the view pager
         ViewPager vpPager = (ViewPager) findViewById(R.id.viewpager);
         //set the view pager adapter for the pager
-        vpPager.setAdapter(new TweetsPagerAdapter(getSupportFragmentManager()));
+        adapterViewPager = new TweetsPagerAdapter(getSupportFragmentManager());
+        vpPager.setAdapter(adapterViewPager);
         //Find the pager sliding tabs
         PagerSlidingTabStrip tabStrip = (PagerSlidingTabStrip) findViewById(R.id.tabs);
         //attach the pager tabs to the viewpager
         tabStrip.setViewPager(vpPager);
 
+        homeTimelineFragment = (HomeTimelineFragment) adapterViewPager.getRegisteredFragment(0);
         client = TwitterApplication.getRestClient(); //singleton client
         getMyInfo();
-
-
 
 
     }
@@ -83,12 +84,24 @@ public class TimelineActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+
+    public void onOthersProfile(View view) {
+        //launch the profile view
+        Intent i = new Intent(this,ProfileActivity.class);
+        Integer position = (Integer) view.getTag();
+
+        TweetsArrayAdapter aTweets = homeTimelineFragment.getaTweets();
+        Tweet test = aTweets.getItem(position);
+        String userName = test.getUser().getScreenName();
+        i.putExtra("screen_name", userName);
+        startActivity(i);
+    }
+
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         // REQUEST_CODE is defined above
         if (resultCode == RESULT_OK && requestCode == REQUEST_CODE) {
-            // Load the fragment
-            homeTimelineFragment = (HomeTimelineFragment) adapterViewPager.getRegisteredFragment(0);
 
             Tweet newTweet =(Tweet) data.getSerializableExtra("newTweet");
             homeTimelineFragment.insertTweet(newTweet,0);

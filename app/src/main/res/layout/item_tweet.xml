@@ -12,6 +12,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:id="@+id/ivProfileImage"
+        android:onClick="onOthersProfile"
         android:padding="10dp"
         android:layout_marginRight="5dp" />
 

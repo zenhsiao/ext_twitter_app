@@ -72,4 +72,8 @@ public abstract class TweetsListFragment extends Fragment {
         aTweets.insert(tweet, 0);
         aTweets.notifyDataSetChanged();
     }
+
+    public TweetsArrayAdapter getaTweets(){
+        return aTweets;
+    }
 }

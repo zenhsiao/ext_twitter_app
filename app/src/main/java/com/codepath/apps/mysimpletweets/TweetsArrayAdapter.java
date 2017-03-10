@@ -45,6 +45,7 @@ public class TweetsArrayAdapter extends ArrayAdapter<Tweet>{
         tvTime.setText(tweet.getCreatedAt());
         ivProfileImage.setImageResource(0);//clear out the oldimage for a recycled view
         Picasso.with(getContext()).load(tweet.getUser().getProfileImageUrl()).into(ivProfileImage);
+        ivProfileImage.setTag(position);
         //5.Return the view to be inserted into the list
         return convertView;
     }
