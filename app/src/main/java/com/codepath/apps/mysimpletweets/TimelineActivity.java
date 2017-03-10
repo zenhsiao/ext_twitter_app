@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 
 import com.astuetz.PagerSlidingTabStrip;
 import com.codepath.apps.mysimpletweets.fragments.HomeTimelineFragment;
@@ -27,12 +28,14 @@ public class TimelineActivity extends AppCompatActivity {
 
     private TweetsListFragment fragmentTweetsList;
     private HomeTimelineFragment homeTimelineFragment;
+    private MentionsTimelineFragment mentionsTimelineFragment;
     private TwitterClient client;
     private SmartFragmentStatePagerAdapter adapterViewPager;
 
     private String myName;
     private String myScreenName;
     private String myPhotoUrl;
+    private Integer page;
 
     // REQUEST_CODE can be any value we like, used to determine the result type later
     private final int REQUEST_CODE = 20;
@@ -52,12 +55,39 @@ public class TimelineActivity extends AppCompatActivity {
         //attach the pager tabs to the viewpager
         tabStrip.setViewPager(vpPager);
 
-        homeTimelineFragment = (HomeTimelineFragment) adapterViewPager.getRegisteredFragment(0);
+//        homeTimelineFragment = (HomeTimelineFragment) adapterViewPager.getRegisteredFragment(0);
+//        adapterViewPager.getRegisteredFragment(vpPager.getCurrentItem());
         client = TwitterApplication.getRestClient(); //singleton client
         getMyInfo();
 
+        // Attach the page change listener to tab strip and **not** the view pager inside the activity
+        tabStrip.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+
+            // This method will be invoked when a new page becomes selected.
+            @Override
+            public void onPageSelected(int position) {
+                page = position;
+//                Toast.makeText(TimelineActivity.this,
+//                        "Selected page position: " + page, Toast.LENGTH_SHORT).show();
+            }
+
+            // This method will be invoked when the current page is scrolled
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+                // Code goes here
+            }
+
+            // Called when the scroll state changes:
+            // SCROLL_STATE_IDLE, SCROLL_STATE_DRAGGING, SCROLL_STATE_SETTLING
+            @Override
+            public void onPageScrollStateChanged(int state) {
+                // Code goes here
+            }
+        });
 
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -89,12 +119,23 @@ public class TimelineActivity extends AppCompatActivity {
         //launch the profile view
         Intent i = new Intent(this,ProfileActivity.class);
         Integer position = (Integer) view.getTag();
+        if (page == null || page == 0 ){
+            TweetsArrayAdapter aTweets = homeTimelineFragment.getaTweets();
+            Tweet selectedTweet = aTweets.getItem(position);
+            String userName = selectedTweet.getUser().getScreenName();
+            i.putExtra("selectedTweet", selectedTweet);
+            i.putExtra("screen_name", userName);
+            startActivity(i);
+        } else{
+            TweetsArrayAdapter aTweets = mentionsTimelineFragment.getaTweets();
+            Tweet selectedTweet = aTweets.getItem(position);
+            String userName = selectedTweet.getUser().getScreenName();
+            i.putExtra("selectedTweet", selectedTweet);
+            i.putExtra("screen_name", userName);
+            startActivity(i);
+        }
 
-        TweetsArrayAdapter aTweets = homeTimelineFragment.getaTweets();
-        Tweet test = aTweets.getItem(position);
-        String userName = test.getUser().getScreenName();
-        i.putExtra("screen_name", userName);
-        startActivity(i);
+
     }
 
 
@@ -133,7 +174,7 @@ public class TimelineActivity extends AppCompatActivity {
     }
 
     // Extend from SmartFragmentStatePagerAdapter now instead for more dynamic ViewPager items
-    public static class TweetsPagerAdapter extends SmartFragmentStatePagerAdapter{
+    public class TweetsPagerAdapter extends SmartFragmentStatePagerAdapter {
         private String tabTitles[] = {"Home","Mentions"};
 
         //adapter gets the manager insert or remove fragment from activity
@@ -153,6 +194,25 @@ public class TimelineActivity extends AppCompatActivity {
             }
         }
 
+        // Here we can finally safely save a reference to the created
+        // Fragment, no matter where it came from (either getItem() or
+        // FragmentManger). Simply save the returned Fragment from
+        // super.instantiateItem() into an appropriate reference depending
+        // on the ViewPager position.
+        @Override
+        public Object instantiateItem(ViewGroup container, int position) {
+            Fragment createdFragment = (Fragment) super.instantiateItem(container, position);
+            // save the appropriate reference depending on position
+            switch (position) {
+                case 0:
+                    homeTimelineFragment = (HomeTimelineFragment) createdFragment;
+                    break;
+                case 1:
+                    mentionsTimelineFragment = (MentionsTimelineFragment) createdFragment;
+                    break;
+            }
+            return createdFragment;
+        }
         //return the tab title
         @Override
         public CharSequence getPageTitle(int position) {

@@ -7,6 +7,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.codepath.apps.mysimpletweets.fragments.UserTimelineFragment;
+import com.codepath.apps.mysimpletweets.models.Tweet;
 import com.codepath.apps.mysimpletweets.models.User;
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.squareup.picasso.Picasso;
@@ -26,19 +27,29 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        client = TwitterApplication.getRestClient();
-        //Get the account info
-        client.getMyTwitterInfo(new JsonHttpResponseHandler(){
-            @Override
-            public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
-                user = User.fromJSON(response);
-                //My current user account's info
-                getSupportActionBar().setTitle("@" + user.getScreenName());
-                populateProfileHeader(user);
-            }
-        });
+        Tweet selectedTweet = (Tweet) getIntent().getSerializableExtra("selectedTweet");
+        if (selectedTweet != null){
+            User selectedUser = selectedTweet.getUser();
+            populateProfileHeader(selectedUser);
+        } else{
+            client = TwitterApplication.getRestClient();
+            //Get the account info
+            client.getMyTwitterInfo(new JsonHttpResponseHandler(){
+                @Override
+                public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+                    user = User.fromJSON(response);
+                    //My current user account's info
+                    getSupportActionBar().setTitle("@" + user.getScreenName());
+                    populateProfileHeader(user);
+                }
+            });
+
+        }
+
+
         //Get screen_name from the activity that launch this
         String screenName = getIntent().getStringExtra("screen_name");
+
         //Create the user timeline fragment
         UserTimelineFragment fragmentUserTimeline = UserTimelineFragment.newInstance(screenName);
         //Display user fragment within the activity(dynamically)
