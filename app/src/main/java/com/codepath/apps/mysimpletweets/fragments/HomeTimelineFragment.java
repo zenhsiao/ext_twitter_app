@@ -18,6 +18,8 @@ public class HomeTimelineFragment extends TweetsListFragment{
 
     private TwitterClient client;
 
+
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +34,7 @@ public class HomeTimelineFragment extends TweetsListFragment{
 
     //send an API request to get the timeline json
     //Fill the listview by creating the tweet objects from the json
-    private void populateTimeline( int page) {
+    public void populateTimeline( int page) {
         client.getHomeTimeline(Tweet.getMaxId(),page, new JsonHttpResponseHandler(){
             //success
             @Override
@@ -52,7 +54,4 @@ public class HomeTimelineFragment extends TweetsListFragment{
         });
     }
 
-    protected void loadMoreData(int page) {
-        populateTimeline(page);
-    }
 }

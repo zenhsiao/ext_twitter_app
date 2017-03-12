@@ -28,6 +28,7 @@ public abstract class TweetsListFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_tweets_list,parent,false);
         //Find the listview
         lvTweets = (ListView) v.findViewById(R.id.lvTweets);
+        aTweets.clear();
         //connect adapter to listview
         lvTweets.setAdapter(aTweets);
         lvTweets.setOnScrollListener(new EndlessScrollListener() {
@@ -59,14 +60,13 @@ public abstract class TweetsListFragment extends Fragment {
     // Append the next page of data into the adapter
     // This method probably sends out a network request and appends new data items to your adapter.
     public void loadNextDataFromApi(int offset) {
-        loadMoreData(offset);
+        populateTimeline(offset);
     }
 
     public void addAll(List<Tweet> tweets){
         aTweets.addAll(tweets);
     }
 
-    protected abstract void loadMoreData(int page);
 
     public void insertTweet(Tweet tweet, int position) {
         aTweets.insert(tweet, 0);
@@ -76,4 +76,7 @@ public abstract class TweetsListFragment extends Fragment {
     public TweetsArrayAdapter getaTweets(){
         return aTweets;
     }
+    protected abstract void populateTimeline(int page);
+
+
 }

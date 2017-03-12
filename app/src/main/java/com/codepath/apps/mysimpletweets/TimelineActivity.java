@@ -60,7 +60,7 @@ public class TimelineActivity extends AppCompatActivity {
         client = TwitterApplication.getRestClient(); //singleton client
         getMyInfo();
 
-        // Attach the page change listener to tab strip and **not** the view pager inside the activity
+//         Attach the page change listener to tab strip and **not** the view pager inside the activity
         tabStrip.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
 
             // This method will be invoked when a new page becomes selected.
