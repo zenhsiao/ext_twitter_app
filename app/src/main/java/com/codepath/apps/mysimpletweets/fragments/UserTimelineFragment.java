@@ -22,7 +22,7 @@ public class UserTimelineFragment extends TweetsListFragment {
         super.onCreate(savedInstanceState);
         //Get the client
         client = TwitterApplication.getRestClient(); //singleton client
-        populateTimeline(0);
+        populateTimeline(0,0);
 
 
     }
@@ -41,7 +41,7 @@ public class UserTimelineFragment extends TweetsListFragment {
 
     //send an API request to get the timeline json
     //Fill the listview by creating the tweet objects from the json
-    public void populateTimeline(int page) {
+    public void populateTimeline(long max_id, int page) {
         String screen_name = getArguments().getString("screen_name");
         client.getUserTimeline(screen_name,Tweet.getMaxId(), page, new JsonHttpResponseHandler() {
             //success

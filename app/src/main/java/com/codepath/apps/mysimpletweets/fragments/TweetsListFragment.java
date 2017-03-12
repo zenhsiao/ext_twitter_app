@@ -59,8 +59,10 @@ public abstract class TweetsListFragment extends Fragment {
 
     // Append the next page of data into the adapter
     // This method probably sends out a network request and appends new data items to your adapter.
-    public void loadNextDataFromApi(int offset) {
-        populateTimeline(offset);
+    public void loadNextDataFromApi(int page) {
+        Tweet tweet = aTweets.getItem(aTweets.getCount() - 1);
+        long maxId = tweet.getUid() - 1;
+        populateTimeline(maxId,page);
     }
 
     public void addAll(List<Tweet> tweets){
@@ -76,7 +78,7 @@ public abstract class TweetsListFragment extends Fragment {
     public TweetsArrayAdapter getaTweets(){
         return aTweets;
     }
-    protected abstract void populateTimeline(int page);
+    protected abstract void populateTimeline(long maxId,int page);
 
 
 }
